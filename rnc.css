@@ -132,4 +132,9 @@ label {
     height: 33px;
     margin: 10px auto 20px;
   }
+
+  #convert-btn:active {
+    width: 215.3px;
+    height: 37.2px;
+  }
 }
