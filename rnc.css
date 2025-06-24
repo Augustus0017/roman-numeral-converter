@@ -99,3 +99,37 @@ label {
 .hide {
     display: none;
 }
+
+@media (max-width: 654px) {
+  #container {
+    width: 75%;
+    height: 50%;
+  }
+
+  #header {
+    font-size: .85rem;
+    margin-bottom: 10px;
+  }
+
+  #input-container {
+    height: 180px;
+  }
+
+  label {
+    font-size: .8rem;
+    display: block;
+    width: 200px;
+    margin: 20px auto 0;
+  }
+
+  #number {
+    width: 70%;
+    height: 33px;
+  }
+
+  #convert-btn {
+    width: 200px;
+    height: 33px;
+    margin: 10px auto 20px;
+  }
+}
