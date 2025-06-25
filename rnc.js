@@ -1,7 +1,6 @@
 const number = document.getElementById("number");
 const convertBtn = document.getElementById("convert-btn");
 const output = document.getElementById("output");
-const outputP = document.querySelector(".output");
 
 const placeObjs = [
     {   // units
@@ -86,24 +85,24 @@ const toRomanNumeral = (numStr) => {
 }
 
 const displayResult = (numStr) => {
-    outputP.innerText = toRomanNumeral(numStr);
+    output.innerText = toRomanNumeral(numStr);
     output.classList.remove("hide");
 }
 
 const eventHandler = () => {
     const rawStr = number.value;
     if (rawStr==="") {
-        alert("Please enter a valid number");
+        output.innerText = "Please enter a valid number";
         return;
     }
 
     const numberVal = Number(cleanStr(rawStr));
     if (numberVal<0) {
-        alert("Please enter a number greater than or equal to 1");
+        output.innerText = "Please enter a number greater than or equal to 1";
         return;
     }
     if (numberVal>3999) {
-        alert("Please enter a value less than or equal to 3999");
+        output.innerText = "Please enter a number less than or equal to 3999";
         return;
     }
 
